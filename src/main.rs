@@ -56,7 +56,7 @@ fn check_pt() -> bool {
         //that it is installed and actually works
         .arg(&"protontricks")
         .output()
-        .expect("which failed to execute"); //if this happens the distro is probably fucked
+        .expect("which failed to execute"); //this shouldn't happen
     return pt_exists.status.success();
 }
 
